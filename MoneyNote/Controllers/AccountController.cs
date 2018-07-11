@@ -9,7 +9,7 @@ namespace MoneyNote.Controllers
 {
     public class AccountController : Controller
     {
-        // GET: money
+        // GET: 回傳帳簿資料
         public ActionResult Index()
         {
             FakeAccountData AccountBooks = new FakeAccountData();
