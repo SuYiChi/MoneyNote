@@ -16,5 +16,12 @@ namespace MoneyNote.Controllers
 
             return View(AccountBooks.GetFakeAccountData());
         }
+        [ChildActionOnly]
+        public ActionResult AccountItems()
+        {
+            FakeAccountData AccountBooks = new FakeAccountData();
+
+            return View(AccountBooks.GetFakeAccountData());
+        }
     }
 }

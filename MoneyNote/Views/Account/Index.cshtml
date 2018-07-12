@@ -46,7 +46,12 @@
 </div>
 
 <!-- 資料清單區塊 -->
-@Html.Partial("_ListAccountBooks", Model)
+@* 使用Partial View *@
+@*@Html.Partial("_ListAccountBooks", Model)*@
+
+@* 使用Child Action *@
+@Html.Action("AccountItems")
+
 @*<div class="row">
         <div class="col-md-12">
             <table class="table table-bordered table-hover">
