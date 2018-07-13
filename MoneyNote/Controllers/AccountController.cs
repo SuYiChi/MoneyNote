@@ -12,16 +12,15 @@ namespace MoneyNote.Controllers
         // GET: 回傳帳簿資料
         public ActionResult Index()
         {
-            FakeAccountData AccountBooks = new FakeAccountData();
-
-            return View(AccountBooks.GetFakeAccountData());
+           
+            return View();
         }
         [ChildActionOnly]
         public ActionResult AccountItems()
         {
-            FakeAccountData AccountBooks = new FakeAccountData();
+            FakeAccountData accountBooks = new FakeAccountData();
 
-            return View(AccountBooks.GetFakeAccountData());
+            return View(accountBooks.GetFakeAccountData());
         }
     }
 }
